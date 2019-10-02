@@ -1,4 +1,4 @@
-FROM debian:stretch
+FROM debian:9
 MAINTAINER Getty Images "https://github.com/gettyimages"
 
 RUN apt-get update \
@@ -36,7 +36,7 @@ RUN apt-get update \
  && rm -rf /var/lib/apt/lists/*
 
 # HADOOP
-ENV HADOOP_VERSION 2.7.4
+ENV HADOOP_VERSION 3.1.2
 ENV HADOOP_HOME /usr/hadoop-$HADOOP_VERSION
 ENV HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 ENV PATH $PATH:$HADOOP_HOME/bin
