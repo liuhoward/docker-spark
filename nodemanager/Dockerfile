@@ -1,4 +1,4 @@
-FROM bde2020/hadoop-base
+FROM howard15/spark:hadoop-base
 
 MAINTAINER Ivan Ermilov <ivan.s.ermilov@gmail.com>
 
