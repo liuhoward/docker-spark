@@ -60,5 +60,8 @@ RUN curl -sL --retry 3 \
  && mv /usr/$SPARK_PACKAGE $SPARK_HOME \
  && chown -R root:root $SPARK_HOME
 
+RUN pip3 install -U findspark pyspark
+
+
 WORKDIR $SPARK_HOME
 CMD ["bin/spark-class", "org.apache.spark.deploy.master.Master"]
