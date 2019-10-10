@@ -33,6 +33,20 @@ A `debian:stretch` based [Spark](http://spark.apache.org) container. Use it in a
 
 
 
+#### enter a running container
+
+```
+$ docker ps
+CONTAINER ID  IMAGE    COMMAND  CREATED      STATUS      PORTS  NAMES
+72ca2488b353  my_image          X hours ago  Up X hours         my_container
+
+$ docker exec -it 72ca2488b353 sh
+```
+
+
+
+
+
 ## docker-compose example
 
 To create a cluster with [docker-compose](http://docs.docker.com/compose):
